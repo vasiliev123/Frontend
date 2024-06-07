@@ -1,6 +1,6 @@
-def imageName = "127.0.0.1:8082/docker_registry/frontend"
+def imageName = "10.2.2.44:8082/docker_registry/frontend"
 def dockerTag = ""
-def dockerRegistry = "http://127.0.0.1:8082"
+def dockerRegistry = "http://10.2.2.44:8082"
 def registryCredentials = "artifactory"
 
 pipeline {
