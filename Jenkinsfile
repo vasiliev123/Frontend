@@ -12,13 +12,6 @@ pipeline {
         scannerHome = tool 'SonarQube'
     }
 
-    post {
-        always {
-            junit testResults: "test-results/*.xml"
-            cleanWs()
-        }
-    }
-
     stages {
         stage('Download repo') {
             steps {
