@@ -55,8 +55,8 @@ pipeline {
             junit testResults: "test-results/*.xml"
             cleanWs()
         }
-        success {
-            build job: 'App_of_apps', parameters: [ string(name: 'frontendDockerTag', value: "$dockerTag")], wait: false
-        }
+        // success {
+        //     build job: 'App_of_apps', parameters: [ string(name: 'frontendDockerTag', value: "$dockerTag")], wait: false
+        // }
     }
 }
